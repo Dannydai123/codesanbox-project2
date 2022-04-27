@@ -14,37 +14,33 @@ root.render(
 
 class Foo {
   constructor() {
-
     this.x = 1;
-
+    this.y = 10;
   }
 
-  print ()  {
+  print() {
     let print1 = () => {
-
-      console.log("print1", this)
+      console.log("print1", this);
     };
     console.log("print", this);
     console.log(this.x);
-    print1()
-  };
+    print1();
+  }
+
+  printA() {
+    let y = 0;
+    this.y = 100;
+
+    console.log(y, this.y);
+  }
 
   print2 = () => {
-
-    console.log("print2", this)
+    console.log("print2", this);
   };
- 
-
- 
-
 }
 
-
 let foo = new Foo();
-foo.print()
+foo.print();
 // foo.print1()
-foo.print2()
-
-
-
-
+foo.print2();
+foo.printA();
