@@ -29,7 +29,7 @@ class Foo {
 
   printA() {
     let y = 0;
-    this.y = 100;
+    this.z = 100;
 
     console.log(y, this.y);
   }
@@ -39,6 +39,7 @@ class Foo {
   };
 }
 
+// new branch
 let foo = new Foo();
 foo.print();
 // foo.print1()
