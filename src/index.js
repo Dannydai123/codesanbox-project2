@@ -25,6 +25,12 @@ class Foo {
     console.log("print", this);
     console.log(this.x);
     print1();
+
+    function inner_fn() {
+      console.log("inner", this);
+    }
+
+    inner_fn();
   }
 
   printA() {
